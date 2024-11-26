@@ -1,0 +1,14 @@
+"./SYS/src/main.o"
+"./Project_Settings/Startup_Code/system_SKEAZ1284.o"
+"./Project_Settings/Startup_Code/startup_SKEAZ1284.o"
+"./MCAL/src/clocks.o"
+"./MCAL/src/UART.o"
+-T
+"D:/Personal/GITHUB/ST_UART_DTS/MCU_Firmware/S32_DS_Workspace/UART_kea128/UART_kea128/Project_Settings/Linker_Files/SKEAZ_flash.ld"
+-Wl,-Map,"UART_kea128.map"
+-Xlinker
+--gc-sections
+-mcpu=cortex-m0plus
+-mthumb
+-specs=ewl_c_noio.specs
+--sysroot="C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2"

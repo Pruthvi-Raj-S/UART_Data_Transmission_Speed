@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../../makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS_QUOTED += \
+"../MCAL/src/UART.c" \
+"../MCAL/src/clocks.c" \
+
+C_SRCS += \
+../MCAL/src/UART.c \
+../MCAL/src/clocks.c \
+
+OBJS_OS_FORMAT += \
+./MCAL/src/UART.o \
+./MCAL/src/clocks.o \
+
+C_DEPS_QUOTED += \
+"./MCAL/src/UART.d" \
+"./MCAL/src/clocks.d" \
+
+OBJS += \
+./MCAL/src/UART.o \
+./MCAL/src/clocks.o \
+
+OBJS_QUOTED += \
+"./MCAL/src/UART.o" \
+"./MCAL/src/clocks.o" \
+
+C_DEPS += \
+./MCAL/src/UART.d \
+./MCAL/src/clocks.d \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+MCAL/src/UART.o: ../MCAL/src/UART.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #1 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@MCAL/src/UART.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "MCAL/src/UART.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+MCAL/src/clocks.o: ../MCAL/src/clocks.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #2 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@MCAL/src/clocks.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "MCAL/src/clocks.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

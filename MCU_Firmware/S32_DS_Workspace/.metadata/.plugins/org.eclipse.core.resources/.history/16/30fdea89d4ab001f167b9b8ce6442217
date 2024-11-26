@@ -1,0 +1,41 @@
+/******************************************************************************
+* @file: UART.h
+*
+* @brief: Header provide commond UART utilities.
+*
+*
+* @Author: Pruthvi Raj S
+*
+* @version: 0.1
+* 			- Initial version
+*
+* @Created on: 26-Nov-2024:
+******************************************************************************/
+
+#ifndef UART_H_
+#define UART_H_
+
+/******************************************************************************
+* Includes
+******************************************************************************/
+#include "derivative.h"
+
+/******************************************************************************
+* Macros
+******************************************************************************/
+
+#define UART_0	UART0_BASE_PTR
+#define UART_1	UART1_BASE_PTR
+#define UART_2	UART2_BASE_PTR
+
+void init_UART(void);
+void transmit_char(char);
+void transmit_string(char* data_string);
+char recieve_char(void);
+void recieve_and_echo_char(void);
+
+#endif /* UART_H_ */
+
+/******************************************************************************
+*							EOF
+******************************************************************************/
