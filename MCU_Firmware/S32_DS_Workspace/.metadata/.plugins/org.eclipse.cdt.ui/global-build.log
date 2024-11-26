@@ -1,0 +1,17 @@
+11:09:51 **** Incremental Build of configuration Debug for project UART_kea128 ****
+make -j8 all 
+Building file: ../src/main.c
+Executing target #5 ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: UART_kea128.elf
+Executing target #6 UART_kea128.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "UART_kea128.elf" "@UART_kea128.args"   
+Finished building target: UART_kea128.elf
+ 
+11:10:00 **** Incremental Build of configuration Debug for project UART_kea128 ****
+make -j8 all 
+make: Nothing to be done for 'all'.

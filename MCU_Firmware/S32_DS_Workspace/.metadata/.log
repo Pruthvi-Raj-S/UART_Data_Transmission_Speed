@@ -1,0 +1,633 @@
+!SESSION 2024-11-26 10:25:52.310 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.nxp.s32ds.arm.ide.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.nxp.s32ds.arm.ide.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-26 10:26:15.707
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\pruthviraj.s'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-11-26 10:26:29.434
+!MESSAGE Connection to http://www.pemicro.com/eclipse/updates/p2.index failed on This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2024-11-26 10:26:29.677
+!MESSAGE Unknown Host: http://www.pemicro.com/eclipse/updates/content.xml
+!STACK 0
+java.net.UnknownHostException: www.pemicro.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-11-26 10:26:41.737
+!MESSAGE Connection to http://www.nxp.com/lgfiles/updates/Eclipse/S32DS_ARM_2018.R1/updatesite/p2.index failed on This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2024-11-26 10:26:41.952
+!MESSAGE Unknown Host: http://www.nxp.com/lgfiles/updates/Eclipse/S32DS_ARM_2018.R1/updatesite/content.xml
+!STACK 0
+java.net.UnknownHostException: www.nxp.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-11-26 10:26:53.994
+!MESSAGE Connection to http://gnuarmeclipse.sourceforge.net/updates/p2.index failed on This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2024-11-26 10:26:54.211
+!MESSAGE Unknown Host: http://gnuarmeclipse.sourceforge.net/updates/content.xml
+!STACK 0
+java.net.UnknownHostException: gnuarmeclipse.sourceforge.net
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-11-26 10:27:06.233
+!MESSAGE Connection to http://download.eclipse.org/eclipse/updates/4.6/p2.index failed on This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2024-11-26 10:27:06.446
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.6/content.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-26 10:52:03.840
+!MESSAGE Indexed 'UART_kea128' (4 sources, 17 headers) in 0.71 sec: 598 declarations; 1,375 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-26 10:53:54.550
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-26 10:53:54.551
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:56:11.764
+!MESSAGE Request for monitor: '*running,thread-id="all"
+=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000580",func="transmit_char",file="../src/UART.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\UART.c",line="29",thread-groups=[i1],times="1",original-location="D:\\Personal\\GITHUB\\ST_UART_DTS\\MCU_Firmware\\S32_DS_Workspace\\UART_kea128\\UART_kea128\\src\\UART.c:29"}
+~"\nBreakpoint "
+~"2, transmit_char (send=50 '2') at ../src/UART.c:29\n"
+~"29\t  (void)UART2_S1;                    /* Read UART2_S1 register to clear TDRE */\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="2",frame={addr="0x00000580",func="transmit_char",args=[{name="send",value="50 '2'"}],file="../src/UART.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\UART.c",line="29"},thread-id="1",stopped-threads="all"
+40^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:56:11.764
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:56:11.765
+!MESSAGE Request for monitor: '41^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:56:11.765
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:56:23.972
+!MESSAGE Request for monitor: '61^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:56:23.972
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:56:25.627
+!MESSAGE Request for monitor: '72^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:56:25.627
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:56:26.723
+!MESSAGE Request for monitor: '83^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:56:26.723
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:18.729
+!MESSAGE Request for monitor: '94^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:18.729
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:21.890
+!MESSAGE Request for monitor: '104^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:21.890
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:22.458
+!MESSAGE Request for monitor: '115^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:22.458
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:23.608
+!MESSAGE Request for monitor: '126^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:23.608
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:30.403
+!MESSAGE Request for monitor: '136^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:30.403
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:34.382
+!MESSAGE Request for monitor: '146^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:34.382
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:37.119
+!MESSAGE Request for monitor: '157^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:37.119
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:57:38.428
+!MESSAGE Request for monitor: '168^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:57:38.428
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 10:59:13.501
+!MESSAGE Request for monitor: '183^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 10:59:13.501
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:00:41.275
+!MESSAGE Request for monitor: '&"monitor _nobr\n"
+@"Command Executed successfully: _nobr\r\n"
+&"flushreg\n"
+~"Register cache flushed.\n"
+&"thbreak main\n"
+~"Hardware assisted breakpoint 4 at 0x496: file ../src/main.c, line 14.\n"
+=breakpoint-created,bkpt={number="4",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="0",original-location="main"}
+&"continue\n"
+~"Continuing.\n"
+*running,thread-id="all"
+=breakpoint-modified,bkpt={number="4",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="1",original-location="main"}
+~"\nTemporary breakpoint "
+~"4, main () at ../src/main.c:14\n"
+~"14\t  int counter = 0;\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="4",frame={addr="0x00000496",func="main",args=[],file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14"},thread-id="1",stopped-threads="all"
+=breakpoint-deleted,id="4"
+43^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:00:41.276
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:00:41.277
+!MESSAGE Request for monitor: '44^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:00:41.277
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:00:41.722
+!MESSAGE Request for monitor: '&"monitor _nobr\n"
+@"Command Executed successfully: _nobr\r\n"
+&"flushreg\n"
+~"Register cache flushed.\n"
+&"thbreak main\n"
+~"Hardware assisted breakpoint 5 at 0x496: file ../src/main.c, line 14.\n"
+=breakpoint-created,bkpt={number="5",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="0",original-location="main"}
+&"continue\n"
+~"Continuing.\n"
+*running,thread-id="all"
+=breakpoint-modified,bkpt={number="5",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="1",original-location="main"}
+~"\nTemporary breakpoint "
+~"5, main () at ../src/main.c:14\n"
+~"14\t  int counter = 0;\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="5",frame={addr="0x00000496",func="main",args=[],file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14"},thread-id="1",stopped-threads="all"
+=breakpoint-deleted,id="5"
+50^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:00:41.722
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:00:41.728
+!MESSAGE Request for monitor: '51^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:00:41.728
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:00:42.219
+!MESSAGE Request for monitor: '56^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:00:42.219
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:00:43.095
+!MESSAGE Request for monitor: '&"monitor _nobr\n"
+@"Command Executed successfully: _nobr\r\n"
+&"flushreg\n"
+~"Register cache flushed.\n"
+&"thbreak main\n"
+~"Hardware assisted breakpoint 6 at 0x496: file ../src/main.c, line 14.\n"
+=breakpoint-created,bkpt={number="6",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="0",original-location="main"}
+&"continue\n"
+~"Continuing.\n"
+*running,thread-id="all"
+=breakpoint-modified,bkpt={number="6",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="1",original-location="main"}
+~"\nTemporary breakpoint "
+~"6, main () at ../src/main.c:14\n"
+~"14\t  int counter = 0;\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="6",frame={addr="0x00000496",func="main",args=[],file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14"},thread-id="1",stopped-threads="all"
+=breakpoint-deleted,id="6"
+58^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:00:43.095
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:03:28.427
+!MESSAGE Request for monitor: '65^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:03:28.427
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:10:30.149
+!MESSAGE Request for monitor: '&"monitor _nobr\n"
+@"Command Executed successfully: _nobr\r\n"
+&"flushreg\n"
+~"Register cache flushed.\n"
+&"thbreak main\n"
+~"Hardware assisted breakpoint 4 at 0x496: file ../src/main.c, line 14.\n"
+=breakpoint-created,bkpt={number="4",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="0",original-location="main"}
+&"continue\n"
+~"Continuing.\n"
+*running,thread-id="all"
+=breakpoint-modified,bkpt={number="4",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="1",original-location="main"}
+~"\nTemporary breakpoint "
+~"4, main () at ../src/main.c:14\n"
+~"14\t  int counter = 0;\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="4",frame={addr="0x00000496",func="main",args=[],file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14"},thread-id="1",stopped-threads="all"
+=breakpoint-deleted,id="4"
+44^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:10:30.149
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:10:30.150
+!MESSAGE Request for monitor: '45^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:10:30.150
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:10:30.573
+!MESSAGE Request for monitor: '50^error,msg="No symbol "pxReadyTasksLists" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:10:30.573
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(pxReadyTasksLists)
+Error message from debugger back end:
+No symbol "pxReadyTasksLists" in current context.
+!STACK 0
+java.lang.Exception: No symbol "pxReadyTasksLists" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:10:30.574
+!MESSAGE Request for monitor: '51^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:10:30.575
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:12:04.011
+!MESSAGE Request for monitor: '&"monitor _nobr\n"
+@"Command Executed successfully: _nobr\r\n"
+&"flushreg\n"
+~"Register cache flushed.\n"
+&"thbreak main\n"
+~"Hardware assisted breakpoint 5 at 0x496: file ../src/main.c, line 14.\n"
+=breakpoint-created,bkpt={number="5",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="0",original-location="main"}
+&"continue\n"
+~"Continuing.\n"
+*running,thread-id="all"
+=breakpoint-modified,bkpt={number="5",type="hw breakpoint",disp="del",enabled="y",addr="0x00000496",func="main",file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14",thread-groups=[i1],times="1",original-location="main"}
+~"\nTemporary breakpoint "
+~"5, main () at ../src/main.c:14\n"
+~"14\t  int counter = 0;\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="5",frame={addr="0x00000496",func="main",args=[],file="../src/main.c",fullname="D:\Personal\GITHUB\ST_UART_DTS\MCU_Firmware\S32_DS_Workspace\UART_kea128\UART_kea128\src\main.c",line="14"},thread-id="1",stopped-threads="all"
+=breakpoint-deleted,id="5"
+55^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:12:04.011
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:12:04.448
+!MESSAGE Request for monitor: '60^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:12:04.448
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:12:04.959
+!MESSAGE Request for monitor: '66^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:12:04.959
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-11-26 11:16:27.060
+!MESSAGE Request for monitor: '70^error,msg="No symbol "_mqx_kernel_data" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-11-26 11:16:27.060
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression _mqx_kernel_data
+Error message from debugger back end:
+No symbol "_mqx_kernel_data" in current context.
+!STACK 0
+java.lang.Exception: No symbol "_mqx_kernel_data" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)

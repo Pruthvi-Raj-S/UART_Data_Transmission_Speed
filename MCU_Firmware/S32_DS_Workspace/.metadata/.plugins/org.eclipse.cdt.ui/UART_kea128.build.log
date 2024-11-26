@@ -1,0 +1,6 @@
+11:10:00 **** Incremental Build of configuration Debug for project UART_kea128 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+11:10:01 Build Finished (took 1s.415ms)
+
