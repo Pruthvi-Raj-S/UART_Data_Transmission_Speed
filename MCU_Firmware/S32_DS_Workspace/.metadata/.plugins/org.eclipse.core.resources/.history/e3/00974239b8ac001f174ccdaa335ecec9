@@ -1,0 +1,70 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+#Progress monitor hint: 7
+first : all
+-include ../makefile.init
+
+# This file contains definitions of environment variables used in the makefiles and .args files if exist.
+-include makefile.local
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include subdir.mk
+-include CFG/src/subdir.mk
+-include MCAL/src/subdir.mk
+-include Project_Settings/Linker_Files/subdir.mk
+-include Project_Settings/Startup_Code/subdir.mk
+-include SYS/src/subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+EXECUTABLES += \
+UART_kea128.elf \
+
+EXECUTABLES_QUOTED += \
+"UART_kea128.elf" \
+
+EXECUTABLES_OS_FORMAT += \
+UART_kea128.elf \
+
+
+# All Target
+all: warning-messages explicit-dependencies UART_kea128.elf secondary-outputs
+
+# Tool invocations
+UART_kea128.elf: $(OBJS) D:/Personal/GITHUB/ST_UART_DTS/MCU_Firmware/S32_DS_Workspace/UART_kea128/UART_kea128/Project_Settings/Linker_Files/SKEAZ_flash.ld $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Executing target #8 $@'
+	@echo 'Invoking: Standard S32DS C Linker'
+	arm-none-eabi-gcc -o "UART_kea128.elf" "@UART_kea128.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) ./*/*/*.d  ./*/*/*.o  $(EXECUTABLES_QUOTED)
+	-@echo ' '
+
+secondary-outputs:
+
+.PHONY: all clean dependents explicit-dependencies warning-messages
+.SECONDARY:
+
+-include ../makefile.targets
+
+explicit-dependencies: 
+
+warning-messages: 
+

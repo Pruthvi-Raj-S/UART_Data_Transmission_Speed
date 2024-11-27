@@ -1,7 +1,7 @@
 /******************************************************************************
 * @file: MCU_Info.h
 *
-* @brief: his is the header for generic information on project
+* @brief: This is the header for generic information on project
 *
 *
 * @Author: Pruthvi Raj S
@@ -22,7 +22,7 @@
 *				MACRO DEFINITION
 ******************************************************************************/
 #define FW_SAP_RELEASE      		0U
-#define FW_INT_VERSION      		0U
+#define FW_INT_VERSION      		1U
 
 
 

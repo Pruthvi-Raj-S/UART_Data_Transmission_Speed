@@ -1,0 +1,23 @@
+/******************************************************************************
+* @file: EEPROM_SIM.h
+*
+* @brief: header file is used for simulating EEPROM using RAM Buffer
+*
+*
+* @Author: Pruthvi Raj S
+*
+* @version: 0.1
+* 			- Initial version
+*
+* @Created on: 27-Nov-2024:
+******************************************************************************/
+
+#ifndef INC_EEPROM_SIM_H_
+#define INC_EEPROM_SIM_H_
+
+
+
+#endif /* INC_EEPROM_SIM_H_ */
+/******************************************************************************
+*							EOF
+******************************************************************************/

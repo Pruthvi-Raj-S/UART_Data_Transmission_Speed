@@ -1,56 +1,31 @@
-15:43:52 **** Incremental Build of configuration Debug for project UART_kea128 ****
+18:08:35 **** Incremental Build of configuration Debug for project UART_kea128 ****
 make -j8 all 
-Building file: ../CFG/src/MCAL_cfg.c
 Building file: ../MCAL/src/UART.c
-Building file: ../MCAL/src/clocks.c
-Executing target #1 ../CFG/src/MCAL_cfg.c
-Executing target #2 ../MCAL/src/UART.c
-Executing target #3 ../MCAL/src/clocks.c
-Building file: ../SYS/src/SYS_Handler.c
+Building file: ../SYS/src/main.c
+Executing target #3 ../MCAL/src/UART.c
+Executing target #8 ../SYS/src/main.c
 Invoking: Standard S32DS C Compiler
 arm-none-eabi-gcc "@MCAL/src/UART.args" -MMD -MP -MF"MCAL/src/UART.d" -MT"MCAL/src/UART.o" -o "MCAL/src/UART.o" "../MCAL/src/UART.c"
 Invoking: Standard S32DS C Compiler
-arm-none-eabi-gcc "@CFG/src/MCAL_cfg.args" -MMD -MP -MF"CFG/src/MCAL_cfg.d" -MT"CFG/src/MCAL_cfg.o" -o "CFG/src/MCAL_cfg.o" "../CFG/src/MCAL_cfg.c"
-Executing target #6 ../SYS/src/SYS_Handler.c
-Invoking: Standard S32DS C Compiler
-arm-none-eabi-gcc "@SYS/src/SYS_Handler.args" -MMD -MP -MF"SYS/src/SYS_Handler.d" -MT"SYS/src/SYS_Handler.o" -o "SYS/src/SYS_Handler.o" "../SYS/src/SYS_Handler.c"
-Invoking: Standard S32DS C Compiler
-Building file: ../SYS/src/main.c
-arm-none-eabi-gcc "@MCAL/src/clocks.args" -MMD -MP -MF"MCAL/src/clocks.d" -MT"MCAL/src/clocks.o" -o "MCAL/src/clocks.o" "../MCAL/src/clocks.c"
+arm-none-eabi-gcc "@SYS/src/main.args" -MMD -MP -MF"SYS/src/main.d" -MT"SYS/src/main.o" -o "SYS/src/main.o" "../SYS/src/main.c"
 ../MCAL/src/UART.c: In function 'UART_Init':
-../MCAL/src/UART.c:77:6: warning: implicit declaration of function 'UART_Set2StopBit' [-Wimplicit-function-declaration]
-      UART_Set2StopBit(pUART);
-      ^
-../MCAL/src/UART.c:81:6: warning: implicit declaration of function 'UART_Set1StopBit' [-Wimplicit-function-declaration]
-      UART_Set1StopBit(pUART);
-      ^
-../MCAL/src/UART.c:42:14: warning: unused variable 'v_InitSts_u16r' [-Wunused-variable]
+../MCAL/src/UART.c:48:14: warning: unused variable 'v_InitSts_u16r' [-Wunused-variable]
      uint16_t v_InitSts_u16r = 0U;
               ^
 ../MCAL/src/UART.c: In function 'UART_PutChar':
-../MCAL/src/UART.c:129:11: warning: unused variable 'v_TxTimeout_u16r' [-Wunused-variable]
+../MCAL/src/UART.c:135:11: warning: unused variable 'v_TxTimeout_u16r' [-Wunused-variable]
   uint16_t v_TxTimeout_u16r = 0U;
            ^
-In file included from ../CFG/src/MCAL_cfg.c:21:0:
-D:/Personal/GITHUB/ST_UART_DTS/MCU_Firmware/S32_DS_Workspace/UART_kea128/UART_kea128/CFG/inc/MCAL_Cfg.h:43:8: error: unknown type name 'ICS_ConfigType'
- extern ICS_ConfigType ICS_Config;
-        ^
-Executing target #7 ../SYS/src/main.c
-make: *** [CFG/src/subdir.mk:35: CFG/src/MCAL_cfg.o] Error 1
-make: *** Waiting for unfinished jobs....
-Invoking: Standard S32DS C Compiler
-arm-none-eabi-gcc "@SYS/src/main.args" -MMD -MP -MF"SYS/src/main.d" -MT"SYS/src/main.o" -o "SYS/src/main.o" "../SYS/src/main.c"
-In file included from ../SYS/src/SYS_Handler.c:24:0:
-D:/Personal/GITHUB/ST_UART_DTS/MCU_Firmware/S32_DS_Workspace/UART_kea128/UART_kea128/CFG/inc/MCAL_Cfg.h:43:8: error: unknown type name 'ICS_ConfigType'
- extern ICS_ConfigType ICS_Config;
-        ^
-make: *** [SYS/src/subdir.mk:42: SYS/src/SYS_Handler.o] Error 1
 Finished building: ../MCAL/src/UART.c
- 
-Finished building: ../MCAL/src/clocks.c
- 
 Finished building: ../SYS/src/main.c
  
+ 
+Building target: UART_kea128.elf
+Executing target #9 UART_kea128.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "UART_kea128.elf" "@UART_kea128.args"   
+Finished building target: UART_kea128.elf
+ 
 
-15:43:56 Build Finished (took 4s.36ms)
+18:08:38 Build Finished (took 3s.427ms)
 

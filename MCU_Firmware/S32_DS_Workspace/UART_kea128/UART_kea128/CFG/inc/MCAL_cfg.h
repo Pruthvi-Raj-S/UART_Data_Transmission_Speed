@@ -22,6 +22,7 @@
 
 /* Other include(s)... */
 #include "uart.h"
+#include "clocks.h"
 
 /******************************************************************************
 *							MACRO DEFINITION
@@ -31,7 +32,7 @@
 
 /*Clock source for UART*/
 #define UART_CLK		BUS_CLK
-#define UART_BAUD_RATE  115200U
+#define UART_BAUD_RATE  9600U
 
 /******************************************************************************
 *							DATA TYPE DECLARATION
