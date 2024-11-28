@@ -1,5 +1,0 @@
-1732602502942	Move 'clocks.c' to 'src'
-1732602510868	Move 'clocks.h' to 'inc'
-1732602520561	Move 'UART.c' to 'src'
-1732602540177	Move 'UART.h' to 'inc'
-1732602618302	Move 'main.c' to 'src'
