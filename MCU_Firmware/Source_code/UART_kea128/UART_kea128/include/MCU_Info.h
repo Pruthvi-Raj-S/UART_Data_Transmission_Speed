@@ -22,7 +22,7 @@
 *				MACRO DEFINITION
 ******************************************************************************/
 #define FW_SAP_RELEASE      		0U
-#define FW_INT_VERSION      		1U
+#define FW_INT_VERSION      		2U
 
 
 

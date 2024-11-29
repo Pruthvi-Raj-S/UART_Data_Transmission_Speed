@@ -32,7 +32,7 @@
 
 /*Clock source for UART*/
 #define UART_CLK		BUS_CLK
-#define UART_BAUD_RATE  9600U
+#define UART_BAUD_RATE  2400U
 
 /******************************************************************************
 *							DATA TYPE DECLARATION

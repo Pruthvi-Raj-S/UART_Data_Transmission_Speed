@@ -45,7 +45,6 @@ void UART_Init(UART_MemMapPtr pUART, UART_ConfigType *pConfig)
     uint8_t u8Temp;
     uint32_t u32SysClk = pConfig->u32SysClkHz;
     uint32_t u32Baud = pConfig->u32Baudrate;
-    uint16_t v_InitSts_u16r = 0U;
 
 	/* Enable the clock to the selected UART */
     if (pUART == UART0_BASE_PTR)
@@ -111,9 +110,6 @@ uint8_t UART_GetChar(UART_MemMapPtr pUART)
     /* Wait until character has been received */
     while (!(pUART->S1 & UART_S1_RDRF_MASK));
 
-    /* Read UART2_S1 register to clear TDRE */
-	(void)pUART->S1;
-
     /* Return the 8-bit data from the receiver */
     return pUART->D;
 }
@@ -132,16 +128,11 @@ uint8_t UART_GetChar(UART_MemMapPtr pUART)
  ******************************************************************************/
 void UART_PutChar(UART_MemMapPtr pUART, uint8_t u8Char)
 {
-	uint16_t v_TxTimeout_u16r = 0U;
-
 	/* Wait for transmit buffer to be empty */
 	while(!(pUART->S1 & UART_S1_TDRE_MASK));
 
-		/* Read UART2_S1 register to clear TDRE */
-		(void)pUART->S1;
-
-		/* Send data */
-		pUART->D=u8Char;
+	/* Send data */
+	pUART->D=u8Char;
 }
 
 /*@TODO*/
@@ -189,7 +180,7 @@ char receive_char(void) {
 
 /* Function to echo the received char back to the Sender */
 void recieve_and_echo_char(void)  {
-  char send = receive_char();        /* Receive Char */
+  uint8_t send = UART_GetChar(UART2);        /* Receive Char */
   transmit_char(send);               /* Transmit same char back to the sender */
   transmit_char('\n');               /* New line */
   transmit_char('\r');               /* Return */

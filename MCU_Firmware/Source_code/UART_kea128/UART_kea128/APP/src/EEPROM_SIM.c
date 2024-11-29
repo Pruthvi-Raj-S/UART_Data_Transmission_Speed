@@ -69,17 +69,33 @@ void EEPROM_SIM_Init(void)
  *
  * \details
  *
- * \param       p_databuffer_u8 -> Address of the EEPROM array
+ * \param       v_arrayindex_u8 -> index of the data to be fetched from EEPROM
+ * 				v_data_u8	-> Data to be written in EEPROM
  * \return      none
- * \remarks     This function Initializes EEPROM SIM APPlication module
+ * \remarks     This function Writes data from EEPROM
  ******************************************************************************/
 void EEPROM_SIM_Write(uint16_t v_arrayindex_u8, uint8_t v_data_u8)
 {
-
+	A_EEPROM_RAM_BUFF_U8[v_arrayindex_u8] = v_data_u8;
 }
 
 /******************************************************************************
- * \fn  		void EEPROM_SIM_Init(void)
+ * \fn  		uint8_t EEPROM_SIM_Read(uint16_t v_arrayindex_u8)
+ * \brief
+ *
+ * \details
+ *
+ * \param       v_arrayindex_u8 -> index of the data to be fetched from EEPROM
+ * \return      uint8_t -> returns data from v_arrayindex_u8 in EEPROM
+ * \remarks     This function Reads data from EEPROM
+ ******************************************************************************/
+uint8_t EEPROM_SIM_Read(uint16_t v_arrayindex_u8)
+{
+	return A_EEPROM_RAM_BUFF_U8[v_arrayindex_u8];
+}
+
+/******************************************************************************
+ * \fn  		void EEPROM_SIM_ClearEEPROM(void)
  * \brief
  *
  * \details
@@ -88,10 +104,17 @@ void EEPROM_SIM_Write(uint16_t v_arrayindex_u8, uint8_t v_data_u8)
  * \return      none
  * \remarks     This function Initializes EEPROM SIM APPlication module
  ******************************************************************************/
-uint8_t EEPROM_SIM_Read(void)
+void EEPROM_SIM_ClearEEPROM(void)
 {
+	/* Local variables and Initializations */
+	uint16_t v_index_u16;
 
+	for(v_index_u16=0;v_index_u16<EEPROM_RAM_BUF_SIZE;v_index_u16++)
+	{
+		A_EEPROM_RAM_BUFF_U8[v_index_u16]=0xFF;
+	}
 }
+
 /******************************************************************************
 *							EOF
 ******************************************************************************/
