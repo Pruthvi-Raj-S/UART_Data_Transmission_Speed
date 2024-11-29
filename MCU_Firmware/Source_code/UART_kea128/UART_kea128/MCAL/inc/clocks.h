@@ -13,6 +13,7 @@
 * @Created on: 26-Nov-2024:
 ******************************************************************************/
 
+/*Driver code fetched from the MCU*/
 #ifndef CLOCKS_H_
 #define CLOCKS_H_
 /******************************************************************************
@@ -436,13 +437,6 @@ void FBI_to_FEE(ICS_ConfigType *pConfig);
 void FBI_to_FBILP(ICS_ConfigType *pConfig);
 void FBILP_to_FBI(ICS_ConfigType *pConfig);
 void FBELP_to_FBE(ICS_ConfigType *pConfig);
-
-/*@TODO*/
-#if 0
-void init_clks_FEI_48MHz(void);
-void init_clks_FEE_40MHz(void);
-#endif
-void init_clks_FEE_40MHz(void);
 
 #endif /* CLOCKS_H_ */
 

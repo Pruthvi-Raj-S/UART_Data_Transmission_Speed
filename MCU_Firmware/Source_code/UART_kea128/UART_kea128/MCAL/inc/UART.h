@@ -12,6 +12,7 @@
 * @Created on: 26-Nov-2024:
 ******************************************************************************/
 
+/*Driver code fetched from the MCU*/
 #ifndef UART_H_
 #define UART_H_
 
@@ -614,12 +615,6 @@ uint8_t UART_GetChar(UART_MemMapPtr pUART);
  * \remarks     This function sends a character in UART
  ******************************************************************************/
 void UART_PutChar(UART_MemMapPtr pUART, uint8_t u8Char);
-
-void init_UART(void);
-void transmit_char(char);
-void transmit_string(char* data_string);
-char recieve_char(void);
-void recieve_and_echo_char(void);
 
 #endif /* UART_H_ */
 
